@@ -1,5 +1,87 @@
 :root {
-  --primary-font: "Quicksand", sans-serif;  
-  --secondary-font: "Poppins", sans-serif;
- 
+  --primary-font: "Poppins", sans-serif;
+  --secondary-font: "Quicksand", sans-serif;  
+
+}
+
+body {
+  font-family: var(--primary-font);
+  background-color: rgb(70, 70, 70);
+}
+
+.container {
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),
+  url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/143/051/original/IMG_6265-cropped.jpg?1726085493");
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: white;
+  text-align: center;
+  padding: 50px 0;
+}
+
+header h1 {
+  font-weight: 700;
+  font-size: 80px;
+  line-height: 1;
+  margin: 30px 0;
+  
+}
+
+header h2, h3 {
+  font-family: var(--secondary-font);
+}
+
+header h2 {
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 1.5;
+  margin: 0;
+}
+
+header h3 {
+  font-weight: 900;
+  font-size: 36px;
+  line-height: 1.5;
+  letter-spacing: 2px;
+  padding-top: 70px;
+  margin: 0;
+}
+
+header a {
+  font-weight: 600;
+  font-size: 20px;
+  color: black;
+  line-height: 15;
+  text-align: center;
+  text-decoration: none;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  background-color: white;
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 900px) {
+  header {
+    padding: 30px 0;
+  }
+
+  header h1 {
+    font-size: 40px;
+  }
+
+  header h2 {
+    font-size: 20px;
+  }
+
+  header h3 {
+    font-size: 16px;
+  }
+
 }
