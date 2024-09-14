@@ -161,6 +161,31 @@ section.main-second-section h2 {
   border-radius: 4px;
 }
 
+.embed {
+  width: 100%;
+  aspect-ratio: 16 / 11;
+}
+
+.main-gallery-section {
+  background-color: rgb(216, 216, 218);
+  padding: 30px;
+}
+
+section.main-gallery-section h2 {
+  font-size: 40px;
+  text-align: center;
+}
+
+section.main-gallery-section h3 {
+  font-size: 30px;
+  text-align: center;
+}
+
+.instagram-embeds {
+  margin: 30px 0;
+  aspect-ratio: 9 / 5;
+}
+
 footer {
   color: white;
   background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
@@ -244,6 +269,10 @@ footer a {
   }
 
   .garden {
+    display: none;
+  }
+
+  .embed {
     display: none;
   }
 
