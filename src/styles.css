@@ -66,11 +66,42 @@ header a {
   text-decoration: none;
   letter-spacing: 3px;
   text-transform: uppercase;
-  background-color: white;
+  background-color: rgba(255, 255, 255, 0.973);
   padding: 15px;
   border-radius: 8px;
   margin-bottom: 20px;
 }
+
+.grid {
+  display: grid;
+  grid-gap: 40px;
+}
+
+.grid-one-column-three-wide {
+  grid-template-columns: 1fr 3fr;
+  background-color: rgba(255, 255, 255, 0.973);
+  padding: 70px 67px;
+}
+
+.garden {
+  width: 300px;
+  border-radius: 8%;
+}
+
+.grid-one-column-three-wide p, a {
+  font-family: var(--secondary-font);
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.8;
+  color: black;
+  opacity: 80%;
+  text-decoration: none;
+}
+
+.grid-one-column-three-wide a:hover {
+  text-decoration: underline;
+}
+
 
 footer {
   color: white;
@@ -99,6 +130,10 @@ footer a {
   opacity: 0.7;
 }
 
+.footer a:hover {
+  text-decoration: underline;
+}
+
 .more-about-list {
   padding: 0;
   margin-left: 1em;
@@ -109,11 +144,15 @@ footer a {
   opacity: 1;
 }
 
-.grid {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 20px;
+.footer-link-website a:hover {
+  text-decoration: underline;
 }
+
+.grid-three-equal-columns {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+
+
 
 @media (max-width: 960px) {
   header {
@@ -125,11 +164,31 @@ footer a {
   }
 
   header h2 {
-    font-size: 20px;
+    font-size: 26px;
   }
 
   header h3 {
-    font-size: 16px;
+    font-size: 22px;
+  }
+  
+  .top-column {
+    padding-top: 0px;
   }
 
+  .bottom-column {
+    padding-bottom: 0px;
+  }
+
+  .grid {
+  grid-template-columns: 1fr;
+  }
+
+  .garden {
+    display: none;
+  }
+
+  footer {
+    padding: 10px 20px;
+  }
+ 
 }
