@@ -15,8 +15,8 @@ body {
 }
 
 section {
-  max-width: 1200px;
   margin: 0 auto;
+  padding: 100px 0;
 }
 
 header {
@@ -81,6 +81,7 @@ header a {
   grid-template-columns: 1fr 3fr;
   background-color: rgba(255, 255, 255, 0.973);
   padding: 70px 67px;
+  align-items: center;
 }
 
 .garden {
@@ -102,6 +103,63 @@ header a {
   text-decoration: underline;
 }
 
+section.main-second-section {
+  background: rgb(131, 22, 22);
+  text-align: center;
+  padding: 30px;
+}
+
+section.main-second-section h2 {
+  font-size: 40px;
+}
+
+.card {
+  background-color: white;
+  margin: 30px 0;
+}
+
+.card p {
+  font-family: var(--secondary-font);
+  font-size: 19px;
+  font-weight: 500;
+  margin: 18px;
+}
+
+.card h3 {
+  font-family: var(--primary-font);
+  font-size: 18px;
+  margin: 0px;
+}
+
+.card-body {
+  padding: 10px;
+}
+
+.card a:hover {
+  text-decoration: underline;
+  font-weight: 500;
+}
+
+.img-responsive {
+  display: block;
+  max-width: 100%;
+}
+
+.btn {
+  display: block;
+  color: white;
+  font-size: 14px;
+  font-weight: 700;
+  line-height: 20px;
+  letter-spacing: 3px;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 20px;
+  margin: 10px 110px;
+  background-color: rgb(138, 2, 2);
+  text-decoration: none;
+  border-radius: 4px;
+}
 
 footer {
   color: white;
@@ -109,7 +167,7 @@ footer {
   url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/143/175/original/footer-image.png?1726154655");
   background-repeat: no-repeat;
   background-size: cover;
-  padding: 100px 0;
+  padding: 50px;
 }
 
 footer h3 {
@@ -144,8 +202,10 @@ footer a {
   opacity: 1;
 }
 
-.footer-link-website a:hover {
+.footer-links:hover {
   text-decoration: underline;
+  font-weight: 500;
+  opacity: 1;
 }
 
 .grid-three-equal-columns {
